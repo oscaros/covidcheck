@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>COVID 19 - Symptom Checker</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+        Step 3/3: Please provide more detail..
+    </ion-item>
+
+    <div class="divTable">
+        <div class="divTableBody">
+          <div class="divTableRow" *ngFor="let q of arrayQuestionsMinor">
+            <div class="divTableCell">{{ q.qtn }}</div>
+            <div class="divTableCell">Yes</div>
+            <div class="divTableCell"><ion-checkbox></ion-checkbox></div>
+            <div class="divTableCell">No</div>
+            <div class="divTableCell"><ion-checkbox></ion-checkbox></div>            
+          </div>
+        </div>
+        </div>
+
+    <ion-button class="btnCenter" [routerLink]="['/result']" >Display Result</ion-button>
+
+
+
+</ion-content>

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>COVID 19 - Symptom Checker</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    Self assessment results
+  </ion-item>
+
+  <div class="divTable">
+      <div class="divTableBody">
+        <div class="divTableRow" *ngFor="let r of arrayResultsDisp">
+          <div class="divTableCell">{{ r.line }}</div>          
+        </div>
+      </div>
+      </div>
+
+</ion-content>

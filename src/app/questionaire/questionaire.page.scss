@@ -1,22 +1,17 @@
-ion-content ion-toolbar {
-  --background: translucent;
-}
-
 .divTable{
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  width: 50%;
+	display: table;
+	width: 100%;
 }
 .divTableRow {
-	display: table-row;
+    display: table-row;
+    text-align: justify;
+    text-justify: inter-word;
 }
 .divTableHeading {
 	background-color: #EEE;
 	display: table-header-group;
 }
 .divTableCell, .divTableHead {
-	//border: 0.1px solid #999898;
 	display: table-cell;
 	padding: 3px 10px;
 }
@@ -33,7 +28,6 @@ ion-content ion-toolbar {
 .divTableBody {
 	display: table-row-group;
 }
-
 .btnCenter{
-  display: flex;
+    display: flex;
 }
